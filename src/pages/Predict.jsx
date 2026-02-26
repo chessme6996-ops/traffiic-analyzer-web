@@ -73,7 +73,7 @@ function InteractiveCard({ junction, onClick }) {
       }}
     >
       <div style={cardHeader}>
-        <span style={junctionLabel}>Junction {junction.id}</span>
+        <span style={junctionLabel}>Intersection {junction.id}</span>
         <span style={badge(junction.val)}>{junction.msg}</span>
       </div>
 
@@ -190,4 +190,5 @@ const badge = (val) => ({
       : val > 40
       ? '#b45309'
       : '#15803d'
+
 });
