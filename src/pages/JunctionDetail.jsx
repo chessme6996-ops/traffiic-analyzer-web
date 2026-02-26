@@ -88,7 +88,7 @@ const JunctionDetail = ({ junction, onBack }) => {
 
                 <div style={analyzerCard}>
                     <h3 style={{ color: 'white' }}>🚦 Traffic Forecast Analyzer</h3>
-                    <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>Select a time to see AI predictions based on historical patterns.</p>
+                    <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>Select a time to see AI predictions based on historical patterns.(BACKEND MAY TOOK 50SEC TO TURN ON)</p>
 
                     <div style={{ display: 'flex', gap: '15px', marginTop: '20px' }}>
                         <input type="time" value={inputTime} onChange={(e) => setInputTime(e.target.value)} style={inputStyle} />
@@ -315,5 +315,6 @@ const btnSettings = { background: 'rgba(255,255,255,0.1)', border: '1px solid rg
 const trendLabelGood = { fontSize: '11px', color: '#10b981', fontWeight: '700' };
 const tagGood = { background: 'rgba(16, 185, 129, 0.15)', color: '#10b981', padding: '4px 10px', borderRadius: '6px', fontSize: '10px', fontWeight: '700' };
 const actionBtn = { padding: '12px', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.05)', color: 'white', borderRadius: '10px', fontSize: '11px', cursor: 'pointer' };
+
 
 export default JunctionDetail;
